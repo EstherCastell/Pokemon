@@ -1,27 +1,27 @@
-import React from "react";
-import './Cards.css'
+import React, { useState } from "react";
+import { Fetch } from "./Fetch";
+import {Cards} from './cards/Cards'
 
-const Pokemons = ({pokemons = []}) => {
+
+
+const Pokemons = () => {
+    const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon")
+    const state = Fetch(url)
+    const {loading, data} = state
+    loading ? console.log('loading'):
+    console.log(data.results)
+  
     return (
-        <div>
-            {
-                pokemons.map((item, index) => (
-                    <div key={index} className="Cards">
-                    <div className="Name">{item.name}</div>
-                    <div>
-                        <img src={item} alt=""></img>
-                    </div>
-                    </div>
-                ))
-            }
-            
-                
-                    
-                
-
-            
-
-        </div>
-    )
+    <div>
+      {
+        loading
+        ?
+        <h1>Loading...</h1>
+        :
+        <Cards results={data.results}/>
+      }
+    </div>
+  )
 }
-export default Pokemons;
+
+export default Pokemons
