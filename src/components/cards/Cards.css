@@ -1,7 +1,10 @@
 .card{
   box-shadow: 1px 1px 5px gray;
-  margin: 5px;
-  width: 150px;
+  margin: 30px;
+  width: 80%;
+  border-radius: 5%;
+  overflow: hidden;
+  margin-top: 30%;
 }
 
 .cards {
@@ -16,4 +19,28 @@
 .cards-item {
   display: flex;
   padding: 1rem;
+}
+.card img {
+  display: flex;
+  margin: 5%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  object-position: center;
+}
+.card name {
+  display: flex;
+  
+
+}
+.name{
+background-color: rgb(231, 203, 203);
+width: 100%;
+overflow: hidden;
+}
+
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }

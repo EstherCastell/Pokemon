@@ -16,7 +16,7 @@ export const Card = ({url}) => {
                 <div className='name'>
                     <h5>{data.forms[0].name}</h5>
                 </div>
-                <div className='Img'></div>
+                <div className='img'></div>
                 <img src={data.sprites.front_default}alt='pokemon'/>
             </div>
         }

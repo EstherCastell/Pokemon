@@ -1,0 +1,19 @@
+.ct-header {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(185, 61, 61);
+}
+
+.img-logo {
+    width: 5%;
+    margin-left: 5%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+h1 {
+    text-align: center;
+    color: ghostwhite;
+    margin-left: 5%;
+  }

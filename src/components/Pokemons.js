@@ -18,7 +18,7 @@ const Pokemons = () => {
         ?
         <h1>Loading...</h1>
         :
-        <Cards results={data.results}/>
+      <Cards results={data.results}/>
       }
     </div>
   )
