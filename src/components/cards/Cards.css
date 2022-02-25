@@ -5,6 +5,7 @@
   border-radius: 5%;
   overflow: hidden;
   margin-top: 30%;
+  background-color: ghostwhite;
 }
 
 .cards {
@@ -43,4 +44,15 @@ h5 {
   text-align: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+}
+
+body {
+  /* background-image: url("https://wi.wallpapertip.com/wmimgs/22-223161_pokemon-backgrounds.jpg") */
+background-color: rgb(233, 233, 233);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
 }

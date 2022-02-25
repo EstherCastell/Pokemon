@@ -13,6 +13,10 @@ const Pokemons = () => {
   
     return (
     <div>
+      <div className="button">
+        <button onClick={()=>setUrl(data.previous)}>Previous</button>
+        <button onClick={()=>setUrl(data.next)}>Next</button>
+      </div>
       {
         loading
         ?
@@ -20,7 +24,9 @@ const Pokemons = () => {
         :
       <Cards results={data.results}/>
       }
+      
     </div>
+    
   )
 }
 
